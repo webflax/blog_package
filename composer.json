@@ -1,0 +1,19 @@
+{
+    "name": "webflaxco/blog",
+    "description": "a Complate Blog Package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webflaxco\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WebFlax",
+            "email": "webflax.developers@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
