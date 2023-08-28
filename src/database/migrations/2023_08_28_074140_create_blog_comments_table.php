@@ -17,13 +17,16 @@ return new class extends Migration {
 
             $table->integer('rate')->nullable();
 
-            $table->string('email',191)->nullable();
-            $table->string('alias',191)->nullable();
+            $table->string('email', 191)->nullable();
+            $table->string('alias', 191)->nullable();
 
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
 
-            $table->unsignedBigInteger('replay_to');
+            $table->unsignedBigInteger('blog_post_id');
+            $table->foreign('blog_post_id')->references('id')->on('blog_posts')->cascadeOnDelete();
+
+            $table->unsignedBigInteger('replay_to')->nullable();
 
             $table->boolean('published');
 

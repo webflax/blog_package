@@ -17,8 +17,6 @@ return new class extends Migration {
 
             $table->string('slug',191);
 
-            $table->string('meta_title',191);
-
             $table->timestamps();
         });
 

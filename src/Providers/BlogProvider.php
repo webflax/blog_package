@@ -32,7 +32,7 @@ class BlogProvider extends ServiceProvider
             return new TagService();
         });
 
-        $dir = __DIR__ . "../database/migrations/";
+        $dir = __DIR__ . "/../database/migrations/";
         $this->loadMigrationsFrom([
             $dir . "2023_08_28_074132_create_blog_posts_table.php",
             $dir . "2023_08_28_074140_create_blog_comments_table.php",

@@ -20,8 +20,6 @@ return new class extends Migration {
 
             $table->unsignedBigInteger('parent_id');
 
-            $table->string('meta_title',191);
-
             $table->timestamps();
         });
 
