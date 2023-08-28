@@ -9,6 +9,10 @@ class BlogTags extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+    ];
+
     /**
      * Communication with Posts that has this tag
      *

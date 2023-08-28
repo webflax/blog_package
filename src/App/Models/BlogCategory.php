@@ -10,6 +10,12 @@ class BlogCategory extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'description',
+        'parent_id'
+    ];
+
     /**
      * Communications With Post
      *

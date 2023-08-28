@@ -13,6 +13,11 @@ class ComposerStaticInite6367b05792cfce42d0cc4cecf462f92
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'b12d97608fcbb3ed178515c7d4f4e63a' => __DIR__ . '/..' . '/ralphjsmit/laravel-helpers/src/Laravel/Support/helpers.php',
+        '83ec15003b087ac80c77e13e1ef6e042' => __DIR__ . '/..' . '/ralphjsmit/laravel-helpers/src/helpers.php',
+        '4da227543b849bd0e7907fc872ef25f9' => __DIR__ . '/..' . '/ralphjsmit/laravel-seo/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,10 +35,20 @@ class ComposerStaticInite6367b05792cfce42d0cc4cecf462f92
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
+            'Spatie\\LaravelPackageTools\\' => 27,
+        ),
+        'R' => 
+        array (
+            'RalphJSmit\\Laravel\\SEO\\Database\\Factories\\' => 42,
+            'RalphJSmit\\Laravel\\SEO\\' => 23,
+            'RalphJSmit\\Helpers\\Database\\Factories\\' => 38,
+            'RalphJSmit\\Helpers\\' => 19,
         ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
         ),
@@ -45,6 +60,12 @@ class ComposerStaticInite6367b05792cfce42d0cc4cecf462f92
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
             'Illuminate\\Config\\' => 18,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'D' => 
         array (
@@ -87,9 +108,38 @@ class ComposerStaticInite6367b05792cfce42d0cc4cecf462f92
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
+        'Spatie\\LaravelPackageTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-package-tools/src',
+        ),
+        'RalphJSmit\\Laravel\\SEO\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ralphjsmit/laravel-seo/database/factories',
+        ),
+        'RalphJSmit\\Laravel\\SEO\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ralphjsmit/laravel-seo/src',
+        ),
+        'RalphJSmit\\Helpers\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ralphjsmit/laravel-helpers/database/factories',
+        ),
+        'RalphJSmit\\Helpers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ralphjsmit/laravel-helpers/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -125,6 +175,18 @@ class ComposerStaticInite6367b05792cfce42d0cc4cecf462f92
         'Illuminate\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/config',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (

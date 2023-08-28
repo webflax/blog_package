@@ -2,14 +2,23 @@
 
 namespace Webflaxco\Blog\App\Models;
 
-
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Webflaxco\Blog\Facades\Category;
 
 class BlogPost extends Model
 {
-    use HasFactory;
+    use HasFactory, Sluggable;
+
+    protected $fillable = [
+        'title',
+        'summary',
+        'published_at',
+        'published',
+        'content',
+        'category'
+    ];
 
     /**
      * Relation To Authroe
@@ -49,6 +58,15 @@ class BlogPost extends Model
     public function tags()
     {
         return $this->belongsToMany(BlogTags::class, 'blog_post_blog_tag');
+    }
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
     }
 
 }

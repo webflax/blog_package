@@ -10,6 +10,15 @@ class BlogComment extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'content',
+        'rate',
+        'email',
+        'alias',
+        'blog_post_id',
+        'replay_to'
+    ];
+
     /**
      * Communication with post
      *

@@ -12,7 +12,7 @@ class PostsService
         'published_at' => ['required'],
         'published' => ['required'],
         'content' => ['required'],
-        'category' => ['required', 'array']
+        // 'category' => ['required']
     ];
 
     protected BlogPost $blogPost;
@@ -29,7 +29,7 @@ class PostsService
 
         $created = BlogPost::create($data);
 
-        $created->categories()->attach();
+        // $created->categories()->attach();
 
         return $created;
     }
